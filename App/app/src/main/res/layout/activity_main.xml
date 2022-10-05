@@ -42,15 +42,16 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="132dp"
         android:gravity="center"
+        android:onClick="AgregarLista"
         android:text="Registrar"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditDepartamento" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_Departamento" />
 
     <EditText
-        android:id="@+id/EditNombre"
+        android:id="@+id/edt_Nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -63,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/EditEdad"
+        android:id="@+id/edt_Edad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -72,10 +73,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditNombre" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_Nombre" />
 
     <EditText
-        android:id="@+id/EditDepartamento"
+        android:id="@+id/edt_Departamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -84,23 +85,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditEdad" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_Edad" />
 
     <ListView
+        android:id="@+id/lv_lista"
         android:layout_width="409dp"
-        android:layout_height="256dp"
+        android:layout_height="180dp"
         app:layout_constraintTop_toBottomOf="@+id/BtnRegisto"
         tools:layout_editor_absoluteX="1dp" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="TextView"
+        android:id="@+id/vd_resultado"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:onClick="AgregarLista"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/_dynamic" />
+        app:layout_constraintTop_toBottomOf="@+id/lv_lista" />
 
 </android.support.constraint.ConstraintLayout>
